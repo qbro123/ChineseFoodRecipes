@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorBGRead"
+    android:weightSum="1"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:textColor="@color/colorWhite"
+        android:gravity="center"
+        android:text="Fire Chicken"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:id="@+id/name"
+        android:background="@color/colorBackground"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+       <include layout="@layout/content_read"></include>
+    </ScrollView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_alignParentBottom="true"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@color/colorWhite"
+    android:weightSum="3"
+    android:layout_height="85dp">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/btnLove"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/favorite"
+            android:layout_height="32dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorite"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/btnShare"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/share"
+            android:layout_height="32dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Share"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:id="@+id/btnSetting"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/settings"
+            android:layout_height="32dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setting"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+
+            />
+    </RelativeLayout>
+
+</LinearLayout>
+</LinearLayout>
